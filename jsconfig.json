@@ -3,17 +3,20 @@
     "checkJs": false,
     "target": "ES2022",
     "module": "ES2022",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "app/*"
-      ]
-    }
+      "~/*": ["app/*"]
+    },
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "./**/*.d.ts",
-    "./**/*.js",
-    "./**/*.jsx"
-  ]
+  "include": ["./**/*.d.ts", "./**/*.js", "./**/*.jsx"]
 }
